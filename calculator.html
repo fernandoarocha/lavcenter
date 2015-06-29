@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="UTF-8">
+  <title>LavCenter Lavanderia</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/skel.min.js"></script>
+  <script src="js/skel-layers.min.js"></script>
+  <script src="js/init.js"></script>
+  <link rel="stylesheet" href="css/maps.css"/>
+  <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16">
+  <noscript>
+    <link rel="stylesheet" href="css/skel.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-xlarge.css" />
+  </noscript>
+  <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
+<body>
+  <!-- Header -->
+    <header id="header" class="nav-header">
+      <!--<h1><a href="index.html">Lav Center</a></h1>-->
+      <img src="images/logo.png" alt="Logo LavCenter" class="logo" rel="LavCenter Lavanderia ">
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="calculator.html">Calculadora</a></li>
+          <li><a href="elements.html">Teste</a></li>
+        </ul>
+      </nav>
+    </header>
+<section id="main" class="main background-agua">
+  <div class="container">
+    <header class="major">
+      <h2 class="white-color">Calculadora</h2>
+    </header>
+    <section>
+      <h3 class="white-color">Realize aqui seu cálculo</h3>
+      <form action="php/calculator.php" method="post">
+        <div class="row uniform 50%">
+          <div class="3u 5u(large) 5u(medium) 5u(xsmall)">
+            <div class="select-wrapper">
+    					<select name="category" id="category">
+    						<option value="">- Tipo -</option>
+    						<option value="1">Comum</option>
+    						<option value="2">Infantil</option>
+    						<option value="3">Edredon</option>
+    						<option value="4">Terno</option>
+    					</select>
+    				</div>
+  				</div>
+          <div class="3u 5u(large) 5u(medium) 5u(xsmall)">
+  							<input type="text" name="weight-one" id="weight-one" placeholder="Peso kg">
+  				</div>
+          <div class="1u$ 2u$(large) 2u$(medium) 2u$(xsmall)">
+            <a type="button" class="button-plus icon fa-plus" id="plus-one"></a>
+          </div>
+        </div>
+        <div class="row uniform 50% hidden swing" id="categoryTwo">
+          <div class="3u 5u(large) 5u(medium) 5u(xsmall)">
+            <div class="select-wrapper">
+    					<select name="category" id="category-two">
+    						<option value="">- Tipo -</option>
+    						<option value="1">Comum</option>
+    						<option value="2">Infantil</option>
+    						<option value="3">Edredon</option>
+    						<option value="4">Terno</option>
+    					</select>
+    				</div>
+  				</div>
+          <div class="3u 5u(large) 5u(medium) 5u(xsmall)">
+  							<input type="text" name="weight-two" id="weight-two" placeholder="Peso kg">
+  				</div>
+          <div class="1u$ 2u$(large) 2u$(medium) 2u$(xsmall)">
+            <a type="text" class="button-plus icon fa-plus" id="plus-two"></a>
+          </div>
+        </div>
+        <div class="row uniform 50% hidden swing" id="categoryThree">
+          <div class="3u 5u(large) 5u(medium) 5u(xsmall)">
+            <div class="select-wrapper">
+    					<select name="category" id="category-three">
+    						<option value="">- Tipo -</option>
+    						<option value="1">Comum</option>
+    						<option value="2">Infantil</option>
+    						<option value="3">Edredon</option>
+    						<option value="4">Terno</option>
+    					</select>
+    				</div>
+  				</div>
+          <div class="3u 5u(large) 5u(medium) 5u(xsmall)">
+  							<input type="text" name="weight-three" id="weight-three" placeholder="Peso kg">
+  				</div>
+          <div class="1u$ 2u$(large) 2u$(medium) 2u$(xsmall)">
+            <a type="text" class="button-plus icon fa-plus" id="plus-three"></a>
+          </div>
+        </div>
+        <div class="row uniform 50% hidden swing" id="categoryFour">
+          <div class="3u 5u(large) 5u(medium) 5u(xsmall)">
+            <div class="select-wrapper">
+    					<select name="category" id="category-four">
+    						<option value="">- Tipo -</option>
+    						<option value="1">Comum</option>
+    						<option value="2">Infantil</option>
+    						<option value="3">Edredon</option>
+    						<option value="4">Terno</option>
+    					</select>
+    				</div>
+  				</div>
+          <div class="3u 5u(large) 5u(medium) 5u(xsmall)">
+  							<input type="text" name="weight-four" id="weight-four" value="" placeholder="Peso kg">
+  				</div>
+          <div class="1u$ 2u$(large) 2u$(medium) 2u$(xsmall)">
+            <a type="text" class="button-plus icon fa-plus" id="plus-four"></a>
+          </div>
+        </div>
+        <div class="row uniform 50%">
+          <div class="2u 2u(large) 3u(medium) 6u(xsmall)">
+            <a id="click-result" class="button icon fa-check-square-o">Realizar</a>
+          </div>
+          <div class="2u$ 3u$(large) 3u$(medium) 5u$(xsmall)">
+                <input type="text" name="result" id="result" value="" placeholder="Resultado">
+          </div>
+      </div>
+    </form>
+    <h6 class="white-color">* Valores aproximados.</h6>
+    <hr class="hr white-color">
+    </section>
+  </div>
+</section>
+  <script src="js/calculator.js"></script>
+</body>
+</html>
